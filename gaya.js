@@ -1,3 +1,3 @@
-document.getElementById("btnKlik").addEventListener("click", function() {
-    alert("JavaScript eksternal berhasil dijalankan!");
+document.getElementById("okButton").addEventListener("click", function() {
+    alert("Tombol OK ditekan!");
 });

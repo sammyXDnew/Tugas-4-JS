@@ -1,35 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 20px;
+    background-image: url("./1 (4).jpg"); /* Ganti dengan ekstensi .jpg */
+    background-size: cover; /* Menyesuaikan ukuran background dengan elemen body */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column; /* Tata letak vertikal */
+    justify-content: center; /* Elemen di tengah secara vertikal */
+    align-items: center; /* Elemen di tengah secara horizontal */
+    height: 100vh; /* Pastikan body memenuhi tinggi viewport */
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e7e7e7;
-            margin: 20px;
-            padding: 20px;
-        }
-        
-        h1 {
-            color: black;
-            text-align: center;
-        }
-        
-        hr {
-            border: 1px solid #ffffff;
-        }
-        
-        p {
-            color: #555;
-            line-height: 1.6;
-            text-align: justify;
-        }
-        
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        b {
-            color: #222;
-        }
+.container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Jarak antara label dan container */
+    margin-bottom: 10px; /* Atur jarak antar container */
+    height: auto; /* Sesuaikan tinggi secara otomatis */
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    width: 120px; /* Lebar tetap untuk label */
+    text-align: left; /* Rata kiri untuk label */
+}
+
+.container {
+    width: 300px;
+    height: 30px; /* Tinggi container */
+    border: none; /* border agar terlihat */
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.container textarea {
+    padding: 5px; /* Tambahkan padding agar teks tidak menempel pada tepi */
+    box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran total */
+}
