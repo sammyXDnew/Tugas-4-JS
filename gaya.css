@@ -21,6 +21,10 @@ body {
     gap: 10px; /* Jarak antara label dan container */
     margin-bottom: 10px; /* Atur jarak antar container */
     height: auto; /* Sesuaikan tinggi secara otomatis */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang putih dengan transparansi */
+    border-radius: 8px; /* Membuat sudut kotak melengkung */
+    padding: 10px; /* Memberikan ruang di dalam kotak */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kotak */
 }
 
 .label {
@@ -44,4 +48,15 @@ body {
 .container textarea {
     padding: 5px; /* Tambahkan padding agar teks tidak menempel pada tepi */
     box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran total */
+}
+
+#hasilContainer {
+    display: none; /* Sembunyikan elemen sebelum tombol OK pertama ditekan */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang putih dengan transparansi */
+    border-radius: 8px; /* Membuat sudut kotak melengkung */
+    padding: 20px; /* Memberikan ruang di dalam kotak */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kotak */
+    width: 100%; /* Memastikan kotak menyesuaikan lebar */
+    max-width: 600px; /* Membatasi lebar maksimum */
+    margin-top: 20px; /* Memberikan jarak dari elemen di atasnya */
 }

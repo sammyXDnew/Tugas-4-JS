@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <title>JavaScript</title>
     <link rel="stylesheet" href="gaya.css">
+<script src="gaya.js" defer></script> <!-- Pastikan file JavaScript terhubung -->
 </head>
 <body>
-    <div class="container-wrapper">
+<div class="container-wrapper">
         <p class="label">Nama:</p>
-        <div id="container" class="container">
-            <textarea style="width: 100%; height: 100%; border: none; resize: none; font-size: 16px;" placeholder=""></textarea>
-        </div>
+<div id="container" class="container">
+        <textarea style="width: 100%; height: 100%; border: none; resize: none; font-size: 16px;" placeholder=""></textarea>
+</div>
     </div>
     <div class="container-wrapper">
         <p class="label">Jumlah Pilihan:</p>
-        <div id="container" class="container">
-            <textarea style="width: 100%; height: 100%; border: none; resize: none; font-size: 16px;" placeholder=""></textarea>
+        <div id="jumlahPilihanContainer" class="container">
+ <textarea style="width: 100%; height: 100%; border: none; resize: none; font-size: 16px;" placeholder=""></textarea>
         </div>
     </div>
-    <button id="okButton" style="margin-top: 20px; padding: 10px 20px; font-size: 16px;">OK</button>
+<button id="okButton" style="margin-top: 20px; padding: 10px 20px; font-size: 16px;">OK</button>
+<div id="hasilContainer" style="margin-top: 20px;"></div> <!-- Tambahkan elemen untuk menampung hasil -->
 </body>
 </html>
