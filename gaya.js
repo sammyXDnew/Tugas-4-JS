@@ -69,7 +69,7 @@ document.getElementById("okButton").addEventListener("click", function() {
                     return;
                 }
 
-                // Tambahkan pilihan dalam bentuk Radio Button atau Drop Down di bawah container
+                // Tambahkan pilihan dalam bentuk Radio Button di bawah container
                 let pilihanHTML = `
                     <div style="margin-top: 20px;">
                         <p><strong>Pilih salah satu:</strong></p>
@@ -79,14 +79,6 @@ document.getElementById("okButton").addEventListener("click", function() {
                                     `<div><input type="radio" name="pilihan" id="pilihan${index}" value="${value}"><label for="pilihan${index}"><strong>${value}</strong></label></div>`
                             )
                             .join("")}
-                    </div>
-                    <div style="margin-top: 20px;">
-                        <p><strong>Atau pilih dari Drop Down:</strong></p>
-                        <select id="dropdownPilihan" style="width: 100%; padding: 5px; font-size: 16px;">
-                            ${pilihanValues
-                                .map((value) => `<option value="${value}">${value}</option>`)
-                                .join("")}
-                        </select>
                     </div>
                     <div style="display: flex; justify-content: center; margin-top: 20px;">
                         <button id="thirdOkButton" style="padding: 10px 20px; font-size: 16px;">OK</button>
@@ -106,8 +98,7 @@ document.getElementById("okButton").addEventListener("click", function() {
 
                         // Ambil pilihan yang dipilih
                         const selectedRadio = document.querySelector('input[name="pilihan"]:checked');
-                        const selectedDropdown = document.getElementById("dropdownPilihan").value;
-                        const selectedPilihan = selectedRadio ? selectedRadio.value : selectedDropdown;
+                        const selectedPilihan = selectedRadio ? selectedRadio.value : "tidak ada pilihan yang dipilih";
 
                         // Hapus semua elemen di dalam body
                         document.body.innerHTML = "";
